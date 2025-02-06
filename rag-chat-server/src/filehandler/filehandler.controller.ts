@@ -15,7 +15,7 @@ export class FilehandlerController {
     }),
   }),)
   uploadFile(@UploadedFile() file : Express.Multer.File){
-    this.fileHandlerService.uploadFile(file.filename)
+    return this.fileHandlerService.uploadFile(file.filename)
   }
 
 }

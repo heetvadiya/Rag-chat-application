@@ -1,5 +1,6 @@
 import './App.css'
 import {useState} from "react";
+import FileHandler from "./components/FileHandler.tsx";
 
 function App() {
   const [review, setReview] = useState<string>("")
@@ -25,6 +26,8 @@ function App() {
           }}/>
       </div>
       <button onClick={handleSubmit}>Send</button>
+
+      <FileHandler></FileHandler>
     </>
   )
 }

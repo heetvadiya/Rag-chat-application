@@ -7,5 +7,6 @@ import {ConfigModule} from "@nestjs/config";
   imports : [ConfigModule.forRoot()],
   controllers: [ChatController],
   providers: [ChatService],
+  exports: [ChatService]
 })
 export class ChatModule {}

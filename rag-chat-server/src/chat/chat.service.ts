@@ -44,5 +44,10 @@ export class ChatService {
     return {"reply": reply.content as string};
   }
 
+  async getOrganicReply(input: string){
+    const reply = await this.llm.invoke(input);
+    return {'reply': reply.content as string}
+  }
+
 }
 
